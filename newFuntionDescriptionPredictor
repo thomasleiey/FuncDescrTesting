@@ -3,7 +3,7 @@ import json
 import time
 import random
 from typing import List, Callable, Optional
-from langchain.schema import SystemMessage, HumanMessage
+from langchain_core.messages import SystemMessage, HumanMessage
 from tenacity import retry, wait_exponential_jitter, stop_after_attempt, retry_if_exception_type
 from Settings import get_uploaded_data_df
 from langchain_openai import ChatOpenAI
